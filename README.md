@@ -43,7 +43,11 @@ After constructing a RegExp, a predicate or other indicator (such as a `RegExp.p
 ### linear `exec` variant
 
 ```js
-let match = re.execLinear(input);
+try {
+  let match = re.execLinear(input);
+} catch {
+  // fallback behaviour
+}
 ```
 
 A new `RegExp.prototype` method that is like `exec` but opts in to linear matching.
@@ -66,7 +70,7 @@ A new RegExp `l` flag could be used both to indicate to `exec` that a linear mat
 let match = re.exec(input, 10e3);
 ```
 
-Some way for the programmer to communicate that a backtracking implementation should be used until some kind of resource exhaustion, at which point a linear implementation should be used. Alternatively, the operation could throwan error that indicates resource exhaustion and the programmer could provide the fallback behaviour.
+Some way for the programmer to communicate that a backtracking implementation should be used until some kind of resource exhaustion, at which point a linear implementation should be used. Alternatively, the operation could throw an error that indicates resource exhaustion and the programmer could provide the fallback behaviour.
 
 ## Prior Art
 
@@ -89,7 +93,7 @@ Some way for the programmer to communicate that a backtracking implementation sh
 
 - https://v8.dev/blog/non-backtracking-regexp
 - V8 flag `--enable-experimental-regexp-engine`
-- Incomplete and unmaintained
+- Incomplete and not actively maintained
 
 ## FAQ
 
