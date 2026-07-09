@@ -13,6 +13,7 @@ Due to the use of a backtracking strategy in the RegExp engines embedded in all 
 
 ## Presentations to Committee
 
+- [July 2026](https://docs.google.com/presentation/d/19Y18Lt165cSwqLI7K7aeA6IbSp9FOC1psrC2_MfaLs4)
 - [May 2026](https://aurele-barriere.github.io/ecma_amsterdam_handout.pdf)
 
 ## Proposal
