@@ -3,7 +3,7 @@ Linear Matching
 
 A [JavaScript proposal](https://github.com/tc39/proposals) to provide RegExp matching capabilities without the risk of catastrophic, unrecoverable failure.
 
-**Stage:** [0](https://tc39.es/process-document)
+**Stage:** [1](https://tc39.es/process-document)
 
 **Champions:** Michael Ficarra, Aurèle Barrière, Clément Pit-Claudel
 
